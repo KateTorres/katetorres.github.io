@@ -14,7 +14,7 @@ body {
     padding: 20px;
     background-color: #0d1b11; 
     color: #ffffff;
-    background-image: url('images/tuya.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
     body {
-        background-image: url('images/tuya@2x.jpg'); /* High-resolution version for Retina displays */
+        background-image: url('images/background.jpg'); /* High-resolution version for Retina displays */
     }
 }
 
