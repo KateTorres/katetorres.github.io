@@ -1,10 +1,11 @@
-{
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body { 
@@ -12,7 +13,42 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #0d1b11; 
-    color: #ffffff; 
+    color: #ffffff;
+    background-image: url('images/tuya.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 150%; /* Increase density for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 200%; /* Further increase density for very small screens */
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+    body {
+        background-image: url('images/tuya@2x.jpg'); /* High-resolution version for Retina displays */
+    }
+}
+
+/* Ensure compatibility across all major browsers */
+h1, h2, p, ul, li, a {
+    -webkit-text-size-adjust: 100%; /* Prevent text scaling issues on mobile */
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility; /* Improve font rendering */
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    -webkit-overflow-scrolling: touch; /* Improve scrolling on iOS */
 }
 
 h1 {
@@ -42,7 +78,7 @@ li {
     text-align: left;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    width: 50%; 
+    width: 80%; 
 }
 
 li:hover {
